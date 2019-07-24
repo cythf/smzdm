@@ -1,4 +1,2 @@
-6218300420 / 6218300420homepage母婴用品-列表条数 / url / response_json['error_code'] == '0'
-len(response_json['data']['rows']) == 20 / GET / 3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6228300421 / 6228300421homepage母婴用品-频道id / url / response_json['error_code'] == '0'
-1<=int(response_json['data']['rows'][0]['article_channel_id'])<=70 and int(response_json['data']['rows'][0]['article_channel_id']) not in (4,65,68) / GET / 3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
+6218300420 / 6218300420homepage母婴用品-列表条数 / url / response / GET / 3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
+6228300421 / 6228300421homepage母婴用品-频道id / url / response / GET / 3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
