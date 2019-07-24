@@ -1,6 +1,4 @@
-6218300420 / 6218300420homepage母婴用品-列表条数 /西北 / 2室1厅1卫 / 9000
-通州-通州北苑 / 60㎡ /南 北 / 2室1厅1卫 / 4300
-朝阳-CBD / 57㎡ /南 / 2室1厅1卫 / 7200 
-海淀-知春路 / 51㎡ /南 / 2室1厅1卫 / 7800 
-海淀-小西天 / 99㎡ /南 / 3室1厅1卫 / 12000 
-通州-梨园 / 51㎡ /北 / 1室1厅1卫 / 4300
+6218300420 / 6218300420homepage母婴用品-列表条数 / https://{{ip_online}}/v1/home?tab_id=80&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523870612128&past_num=0&is_show_guide=&recfeed_switch=0&time=1523870612131&sign=5846F08A8ED543EA9361494139B88620 / response_json['error_code'] == '0'
+len(response_json['data']['rows']) == 20 / GET / 3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
+6228300421 / 6228300421homepage母婴用品-频道id / https://{{ip_online}}/v1/home?tab_id=80&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523870612128&past_num=0&is_show_guide=&recfeed_switch=0&time=1523870612131&sign=5846F08A8ED543EA9361494139B88620 / response_json['error_code'] == '0'
+1<=int(response_json['data']['rows'][0]['article_channel_id'])<=70 and int(response_json['data']['rows'][0]['article_channel_id']) not in (4,65,68) / GET / 3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
