@@ -1,107 +1,62 @@
-id	name	url	description	method	collectionId
-6218300420	6218300420homepage母婴用品-列表条数	https://{{ip_online}}/v1/home?tab_id=80&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523870612128&past_num=0&is_show_guide=&recfeed_switch=0&time=1523870612131&sign=5846F08A8ED543EA9361494139B88620	"response_json['error_code'] == '0'
-len(response_json['data']['rows']) == 20"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6228300421	6228300421homepage母婴用品-频道id	https://{{ip_online}}/v1/home?tab_id=80&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523870612128&past_num=0&is_show_guide=&recfeed_switch=0&time=1523870612131&sign=5846F08A8ED543EA9361494139B88620	"response_json['error_code'] == '0'
-1<=int(response_json['data']['rows'][0]['article_channel_id'])<=70 and int(response_json['data']['rows'][0]['article_channel_id']) not in (4,65,68)"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6238300422	6238300422homepage母婴用品-要素显示	https://{{ip_online}}/v1/home?tab_id=80&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523870612128&past_num=0&is_show_guide=&recfeed_switch=0&time=1523870612131&sign=5846F08A8ED543EA9361494139B88620	"response_json['error_code'] == '0'
-response_json['data']['rows'][0]['cell_type'] != ''
-response_json['data']['rows'][0]['model_type'] != ''
-response_json['data']['rows'][0]['article_id'] != ''
-response_json['data']['rows'][0]['article_url'] != ''
-response_json['data']['rows'][0]['article_title'] != ''
-response_json['data']['rows'][0]['article_subtitle_color'] != ''
-response_json['data']['rows'][0]['article_date'] != ''
-response_json['data']['rows'][0]['article_pic'] != ''"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6248300423	6248300423homepage母婴用品-链接类型	https://{{ip_online}}/v1/home?tab_id=80&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523870612128&past_num=0&is_show_guide=&recfeed_switch=0&time=1523870612131&sign=5846F08A8ED543EA9361494139B88620	"response_json['error_code'] == '0'
-(response_json['data']['rows'][0].has_key('redirect_data')  and [(response_json['data']['rows'][0]['redirect_data'].has_key('link_type') and [response_json['data']['rows'][0]['redirect_data']['link_type'] in Data.pindao] or [True])[0]] or [True])[0]"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6258300424	6258300424homepage玩模乐器-列表条数	https://{{ip_online}}/v1/home?tab_id=91&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523871085502&past_num=0&is_show_guide=&recfeed_switch=0&time=1523871085508&sign=5FF67DE9A62DD8126712216A11FCD6FB	"response_json['error_code'] == '0'
-len(response_json['data']['rows']) == 20"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6268300425	6268300425homepage玩模乐器-频道id	https://{{ip_online}}/v1/home?tab_id=91&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523871085502&past_num=0&is_show_guide=&recfeed_switch=0&time=1523871085508&sign=5FF67DE9A62DD8126712216A11FCD6FB	"response_json['error_code'] == '0'
-1<=int(response_json['data']['rows'][0]['article_channel_id'])<=70 and int(response_json['data']['rows'][0]['article_channel_id']) not in (4,65,68)"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6278300426	6278300426homepage玩模乐器-要素显示	https://{{ip_online}}/v1/home?tab_id=91&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523871085502&past_num=0&is_show_guide=&recfeed_switch=0&time=1523871085508&sign=5FF67DE9A62DD8126712216A11FCD6FB	"response_json['error_code'] == '0'
-response_json['data']['rows'][0]['cell_type'] != ''
-response_json['data']['rows'][0]['model_type'] != ''
-response_json['data']['rows'][0]['article_id'] != ''
-response_json['data']['rows'][0]['article_url'] != ''
-response_json['data']['rows'][0]['article_title'] != ''
-response_json['data']['rows'][0]['article_subtitle_color'] != ''
-response_json['data']['rows'][0]['article_date'] != ''
-response_json['data']['rows'][0]['article_pic'] != ''"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6288300427	6288300427homepage玩模乐器-链接类型	https://{{ip_online}}/v1/home?tab_id=91&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523871085502&past_num=0&is_show_guide=&recfeed_switch=0&time=1523871085508&sign=5FF67DE9A62DD8126712216A11FCD6FB	"response_json['error_code'] == '0'
-(response_json['data']['rows'][0].has_key('redirect_data')  and [(response_json['data']['rows'][0]['redirect_data'].has_key('link_type') and [response_json['data']['rows'][0]['redirect_data']['link_type'] in Data.pindao] or [True])[0]] or [True])[0]"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6298300428	6298300428homepage个护美妆-列表条数	https://{{ip_online}}/v1/home?tab_id=81&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523874686715&past_num=0&is_show_guide=&recfeed_switch=0&time=1523874686718&sign=314A3A8A6E4618E4AB7201F3C7ABA91A	"response_json['error_code'] == '0'
-len(response_json['data']['rows']) == 20"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6308300428	6308300428homepage个护美妆-频道id	https://{{ip_online}}/v1/home?tab_id=81&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523874686715&past_num=0&is_show_guide=&recfeed_switch=0&time=1523874686718&sign=314A3A8A6E4618E4AB7201F3C7ABA91A	"response_json['error_code'] == '0'
-1<=int(response_json['data']['rows'][0]['article_channel_id'])<=70 and int(response_json['data']['rows'][0]['article_channel_id']) not in (4,65,68)"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6318300429	6318300429homepage个护美妆-要素显示	https://{{ip_online}}/v1/home?tab_id=81&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523874686715&past_num=0&is_show_guide=&recfeed_switch=0&time=1523874686718&sign=314A3A8A6E4618E4AB7201F3C7ABA91A	"response_json['error_code'] == '0'
-response_json['data']['rows'][0]['cell_type'] != ''
-response_json['data']['rows'][0]['model_type'] != ''
-response_json['data']['rows'][0]['article_id'] != ''
-response_json['data']['rows'][0]['article_url'] != ''
-response_json['data']['rows'][0]['article_title'] != ''
-response_json['data']['rows'][0]['article_subtitle_color'] != ''
-response_json['data']['rows'][0]['article_date'] != ''
-response_json['data']['rows'][0]['article_pic'] != ''"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6328300430	6328300430homepage个护美妆-链接类型	https://{{ip_online}}/v1/home?tab_id=81&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523874686715&past_num=0&is_show_guide=&recfeed_switch=0&time=1523874686718&sign=314A3A8A6E4618E4AB7201F3C7ABA91A	"response_json['error_code'] == '0'
-(response_json['data']['rows'][0].has_key('redirect_data')  and [(response_json['data']['rows'][0]['redirect_data'].has_key('link_type') and [response_json['data']['rows'][0]['redirect_data']['link_type'] in Data.pindao] or [True])[0]] or [True])[0]"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6338300431	6338300431homepage文化娱乐-列表条数	https://{{ip_online}}/v1/home?tab_id=95&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523875169908&past_num=0&is_show_guide=&recfeed_switch=0&time=1523875169912&sign=803FB14E130AC6BB1D6A7C3E36645EFA	"response_json['error_code'] == '0'
-len(response_json['data']['rows']) == 20"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6348300432	6348300432homepage文化娱乐-频道id	https://{{ip_online}}/v1/home?tab_id=95&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523875169908&past_num=0&is_show_guide=&recfeed_switch=0&time=1523875169912&sign=803FB14E130AC6BB1D6A7C3E36645EFA	"response_json['error_code'] == '0'
-1<=int(response_json['data']['rows'][0]['article_channel_id'])<=70 and int(response_json['data']['rows'][0]['article_channel_id']) not in (4,65,68)"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6358300433	6358300433homepage文化娱乐-要素显示	https://{{ip_online}}/v1/home?tab_id=95&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523875169908&past_num=0&is_show_guide=&recfeed_switch=0&time=1523875169912&sign=803FB14E130AC6BB1D6A7C3E36645EFA	"response_json['error_code'] == '0'
-response_json['data']['rows'][0]['cell_type'] != ''
-response_json['data']['rows'][0]['model_type'] != ''
-response_json['data']['rows'][0]['article_id'] != ''
-response_json['data']['rows'][0]['article_url'] != ''
-response_json['data']['rows'][0]['article_title'] != ''
-response_json['data']['rows'][0]['article_subtitle_color'] != ''
-response_json['data']['rows'][0]['article_date'] != ''
-response_json['data']['rows'][0]['article_pic'] != ''"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6368300434	6368300434homepage文化娱乐-链接类型	https://{{ip_online}}/v1/home?tab_id=95&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523875169908&past_num=0&is_show_guide=&recfeed_switch=0&time=1523875169912&sign=803FB14E130AC6BB1D6A7C3E36645EFA	"response_json['error_code'] == '0'
-(response_json['data']['rows'][0].has_key('redirect_data')  and [(response_json['data']['rows'][0]['redirect_data'].has_key('link_type') and [response_json['data']['rows'][0]['redirect_data']['link_type'] in Data.pindao] or [True])[0]] or [True])[0]"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6378300435	6378300435homepage旅游出行-列表条数	https://{{ip_online}}/v1/home?tab_id=86&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523875921753&past_num=0&is_show_guide=&recfeed_switch=0&time=1523875921756&sign=820C6BB7BAE11F2B551AABC576E63342	"response_json['error_code'] == '0'
-len(response_json['data']['rows']) == 20"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6388300436	6388300436homepage旅游出行-频道id	https://{{ip_online}}/v1/home?tab_id=86&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523875921753&past_num=0&is_show_guide=&recfeed_switch=0&time=1523875921756&sign=820C6BB7BAE11F2B551AABC576E63342	"response_json['error_code'] == '0'
-1<=int(response_json['data']['rows'][0]['article_channel_id'])<=70 and int(response_json['data']['rows'][0]['article_channel_id']) not in (4,65,68)"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6398300437	6398300437homepage旅游出行-要素显示	https://{{ip_online}}/v1/home?tab_id=86&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523875921753&past_num=0&is_show_guide=&recfeed_switch=0&time=1523875921756&sign=820C6BB7BAE11F2B551AABC576E63342	"response_json['error_code'] == '0'
-response_json['data']['rows'][0]['cell_type'] != ''
-response_json['data']['rows'][0]['model_type'] != ''
-response_json['data']['rows'][0]['article_id'] != ''
-response_json['data']['rows'][0]['article_url'] != ''
-response_json['data']['rows'][0]['article_title'] != ''
-response_json['data']['rows'][0]['article_subtitle_color'] != ''
-response_json['data']['rows'][0]['article_date'] != ''
-response_json['data']['rows'][0]['article_pic'] != ''"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6408300438	6408300438homepage旅游出行-链接类型	https://{{ip_online}}/v1/home?tab_id=86&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523875921753&past_num=0&is_show_guide=&recfeed_switch=0&time=1523875921756&sign=820C6BB7BAE11F2B551AABC576E63342	"response_json['error_code'] == '0'
-(response_json['data']['rows'][0].has_key('redirect_data')  and [(response_json['data']['rows'][0]['redirect_data'].has_key('link_type') and [response_json['data']['rows'][0]['redirect_data']['link_type'] in Data.pindao] or [True])[0]] or [True])[0]"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6418300439	6418300439homepage汽车消费-列表条数	https://{{ip_online}}/v1/home?tab_id=87&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523876569714&past_num=0&is_show_guide=&recfeed_switch=0&time=1523876569718&sign=56AED0EB0F6D3CBCA2FF431234700837	"response_json['error_code'] == '0'
-len(response_json['data']['rows']) == 20"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6428300440	6428300440homepage汽车消费-频道id	https://{{ip_online}}/v1/home?tab_id=87&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523876569714&past_num=0&is_show_guide=&recfeed_switch=0&time=1523876569718&sign=56AED0EB0F6D3CBCA2FF431234700837	"response_json['error_code'] == '0'
-1<=int(response_json['data']['rows'][0]['article_channel_id'])<=70 and int(response_json['data']['rows'][0]['article_channel_id']) not in (4,65,68)"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6438300441	6438300441honepage汽车消费-要素显示	https://{{ip_online}}/v1/home?tab_id=87&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523876569714&past_num=0&is_show_guide=&recfeed_switch=0&time=1523876569718&sign=56AED0EB0F6D3CBCA2FF431234700837	"response_json['error_code'] == '0'
-response_json['data']['rows'][0]['cell_type'] != ''
-response_json['data']['rows'][0]['model_type'] != ''
-response_json['data']['rows'][0]['article_id'] != ''
-response_json['data']['rows'][0]['article_url'] != ''
-response_json['data']['rows'][0]['article_title'] != ''
-response_json['data']['rows'][0]['article_subtitle_color'] != ''
-response_json['data']['rows'][0]['article_date'] != ''
-response_json['data']['rows'][0]['article_pic'] != ''"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6448300442	6448300442homepage汽车消费-链接类型	https://{{ip_online}}/v1/home?tab_id=87&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523876569714&past_num=0&is_show_guide=&recfeed_switch=0&time=1523876569718&sign=56AED0EB0F6D3CBCA2FF431234700837	"response_json['error_code'] == '0'
-(response_json['data']['rows'][0].has_key('redirect_data')  and [(response_json['data']['rows'][0]['redirect_data'].has_key('link_type') and [response_json['data']['rows'][0]['redirect_data']['link_type'] in Data.pindao] or [True])[0]] or [True])[0]"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6458300443	6458300443homepage运动户外-列表条数	https://{{ip_online}}/v1/home?tab_id=85&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523877152181&past_num=0&is_show_guide=&recfeed_switch=0&time=1523877152184&sign=2427AD34C408A5087007736837A7E76D	"response_json['error_code'] == '0'
-len(response_json['data']['rows']) == 20"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6468300444	6468300444homepage运动户外-频道id	https://{{ip_online}}/v1/home?tab_id=85&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523877152181&past_num=0&is_show_guide=&recfeed_switch=0&time=1523877152184&sign=2427AD34C408A5087007736837A7E76D	"response_json['error_code'] == '0'
-1<=int(response_json['data']['rows'][0]['article_channel_id'])<=70 and int(response_json['data']['rows'][0]['article_channel_id']) not in (4,65,68)"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-6478300445	6478300445homepage运动户外-要素显示	https://{{ip_online}}/v1/home?tab_id=85&device_id=869011024153022&smzdm_id=6214267210&page=1&limit=20&time_sort=&update_timestamp=1523877152181&past_num=0&is_show_guide=&recfeed_switch=0&time=1523877152184&sign=2427AD34C408A5087007736837A7E76D	"response_json['error_code'] == '0'
-response_json['data']['rows'][0]['cell_type'] != ''
-response_json['data']['rows'][0]['model_type'] != ''
-response_json['data']['rows'][0]['article_id'] != ''
-response_json['data']['rows'][0]['article_url'] != ''
-response_json['data']['rows'][0]['article_title'] != ''
-response_json['data']['rows'][0]['article_subtitle_color'] != ''
-response_json['data']['rows'][0]['article_date'] != ''
-response_json['data']['rows'][0]['article_pic'] != ''"	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-7138300511	7138300511filter根据关键词匹配关联品牌	https://{{ip_online}}/v1/filter/brand/relate_list?p=1	response_json['error_code'] == '0'	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-7148300512	7148300512filter根据关键词匹配关联分类	https://{{ip_online}}/v1/filter/categories/relate_list?keyword=电脑	response_json['error_code'] == '0'	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
-7328300530	7328300530filter常用排序	https://{{ip_online}}/v1/filter/hot?type=shaiwu	response_json['error_code'] == '0'	GET	3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
+丰台-方庄 / 131㎡ /南 北 / 2室1厅2卫 / 13000 
+朝阳-十里堡 / 54㎡ /南 / 1室0厅1卫 / 6700 
+东城-崇文门 / 43㎡ /东 / 1室0厅1卫 / 7200 
+西城-德胜门 / 58㎡ /南 / 2室1厅1卫 / 7500 
+海淀-牡丹园 / 43㎡ /南 / 1室1厅1卫 / 5800 
+通州-通州北苑 / 143㎡ /南 西南 / 3室2厅1卫 / 8000 
+朝阳-石佛营 / 46㎡ /南 / 1室0厅1卫 / 5600
+海淀-定慧寺 / 39㎡ /南 / 1室0厅1卫 / 5300 
+东城-崇文门 / 204㎡ /南 北 / 4室2厅3卫 / 26000 
+朝阳-奥林匹克公园 / 50㎡ /北 / 1室0厅1卫 / 6000 
+朝阳-工体 / 61㎡ /西 / 1室0厅1卫 / 12500
+朝阳-双井 / 64㎡ /东 / 1室0厅1卫 / 7700
+西城-月坛 / 39㎡ /东 / 1室1厅1卫 / 6600
+西城-广安门 / 38㎡ /南 / 1室1厅2卫 / 5600
+朝阳-潘家园 / 53㎡ /东 / 2室1厅1卫 / 5500
+朝阳-朝阳公园 / 162㎡ /北 / 1室0厅1卫 / 8000
+朝阳-三元桥 / 35㎡ /南 / 1室1厅1卫 / 5400
+丰台-看丹桥 / 57㎡ /南 北 / 2室1厅1卫 / 4200
+海淀-公主坟 / 64㎡ /南 北 / 2室1厅1卫 / 6500
+丰台-玉泉营 / 50㎡ /南 / 2室1厅1卫 / 4500 
+朝阳-燕莎 / 51㎡ /北 / 1室0厅1卫 / 9000
+朝阳-望京 / 66㎡ /东南 / 1室1厅1卫 / 7000
+东城-左安门 / 74㎡ /西南 东北 / 2室1厅1卫 / 7500
+东城-广渠门 / 70㎡ /南 / 2室1厅1卫 / 6800
+朝阳-潘家园 / 42㎡ /南 / 1室1厅1卫 / 5600
+海淀-五棵松 / 57㎡ /南 北 / 2室1厅1卫 / 7300
+东城-和平里 / 51㎡ /南 / 2室1厅1卫 / 8000
+海淀-紫竹桥 / 41㎡ /南 / 1室1厅1卫 / 5500
+昌平-回龙观 / 104㎡ /南 北 / 2室1厅1卫 / 7300
+朝阳-和平里 / 65㎡ /东南 / 1室2厅1卫 / 7300
+海淀-紫竹桥 / 120㎡ /南 北 / 3室1厅1卫 / 10000
+顺义-后沙峪 / 44㎡ /西 / 1室0厅1卫 / 3400
+丰台-蒲黄榆 / 57㎡ /西北 / 2室1厅1卫 / 6000
+西城-马甸 / 42㎡ /东 南 / 1室1厅1卫 / 6700
+朝阳-华威桥 / 66㎡ /南 / 1室0厅1卫 / 6500
+丰台-方庄 / 65㎡ /东南 / 2室1厅1卫 / 7000
+朝阳-石佛营 / 74㎡ /南 / 2室1厅1卫 / 7300
+东城-崇文门 / 49㎡ /南 / 2室0厅1卫 / 7800
+朝阳-大望路 / 67㎡ /西南 / 1室0厅1卫 / 7500
+丰台-刘家窑 / 57㎡ /东 西 / 2室1厅1卫 / 5200
+西城-牛街 / 69㎡ /南 北 / 2室1厅1卫 / 8500
+丰台-草桥 / 160㎡ /南 北 / 3室1厅2卫 / 11000
+朝阳-酒仙桥 / 66㎡ /西北 / 1室1厅1卫 / 7500
+丰台-刘家窑 / 46㎡ /东 / 1室1厅1卫 / 4300
+海淀-五道口 / 41㎡ /西 / 1室0厅1卫 / 7800
+丰台-北京南站 / 30㎡ /西 / 1室0厅1卫 / 4000
+朝阳-南沙滩 / 46㎡ /西南 / 2室1厅1卫 / 6500
+大兴-黄村中 / 69㎡ /西 / 1室1厅1卫 / 3800
+朝阳-甜水园 / 70㎡ /南 / 2室1厅1卫 / 7200
+朝阳-石佛营 / 57㎡ /西北 / 2室1厅1卫 / 6700
+海淀-清河 / 55㎡ /东 西 / 2室1厅1卫 / 6000
+东城-东四 / 42㎡ /东 西 / 1室1厅1卫 / 6600
+朝阳-潘家园 / 52㎡ /西 / 1室1厅1卫 / 5500
+西城-官园 / 167㎡ /西南 东北 / 4室2厅2卫 / 24000
+朝阳-国展 / 43㎡ /南 / 1室1厅1卫 / 5500
+丰台-方庄 / 66㎡ /东南 / 2室1厅1卫 / 7500
+东城-建国门内 / 41㎡ /南 / 1室0厅1卫 / 6800 
+朝阳-工体 / 48㎡ /南 / 1室1厅1卫 / 7500 
+朝阳-双井 / 62㎡ /北 / 1室1厅1卫 / 9000 
+朝阳-甜水园 / 53㎡ /南 北 / 2室1厅1卫 / 6000 
+西城-木樨地 / 68㎡ /西南 北 / 2室1厅1卫 / 8800 
+朝阳-亚运村 / 36㎡ /东 / 1室0厅1卫 / 6200 
