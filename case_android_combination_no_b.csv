@@ -1,1 +1,2 @@
-1
+1400001300 <> 1400001300推荐推荐浮层 <> https://{{ip_online}}/v1/recommend/floating_layer?channel_id=2&flag=0&offset=0&smzdm_id=5974090185 <> response_json['error_code'] == '0',response_json['error_msg'] == '' <> GET <> 3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
+1501000100 <> 1501000100国内列表主列表 <> https://{{ip_online}}/v1/youhui/articles?imgmode=0&limit=20 <> response_json['error_code'] == '0',len(response_json['data'] ['rows']) != 0 <> GET <> 3357b460-8bfe-11e8-a975-1775ecd75936-H1adtmkN7
